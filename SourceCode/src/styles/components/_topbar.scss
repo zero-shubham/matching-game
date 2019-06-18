@@ -1,0 +1,13 @@
+.topbar{
+    min-width: 60vw;
+    display: flex;
+    font-size: 2.5rem;
+    justify-content: space-evenly;
+    &__refreshBtn{
+        height: 2rem;
+    }
+
+    @include respond(tab-land){
+        min-width: 90vw;
+    }
+}

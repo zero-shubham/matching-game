@@ -1,0 +1,28 @@
+.gamepad{
+    min-width: 55vw;
+    height: 80%;
+
+    background-image: linear-gradient(to left bottom,#311d7a,#54d1ff);
+
+    border-radius: 2rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: .5rem 2.5rem 2.5rem 1rem rgba(26, 46, 107, .2);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    align-items: center;
+
+    
+    @include respond(tab-port){
+        min-width: 65vw;
+        height: 75%;
+    }
+    @include respond(tab-land){
+        min-width: 80vw;
+    }
+    @include respond(phone){
+        min-width: 95vw;
+    }
+}
